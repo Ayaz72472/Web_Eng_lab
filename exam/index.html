@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div id="div">
-        <button id="flex">Flex</button>
-        <button id="add">Add +</button>
-        <button id="grid">Grid</button>
-        
-    </div>
-    
-    <div id="container">
-
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Container</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container" id="product-container"></div>
+    <div id="cart"></div>
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="cart-total">0.00</span></p><br>
+    <button id="clear-cart-btn">Clear Cart</button>
+    <button id="cart-btn">add Cart</button>
     <script src="index.js"></script>
-</body>
+    </div>
+    <script>
+     const cart =[];
+
+     const container = document.getElementById("product-container");
+     const cartContainer = document.getElementById("cart-items");
+     const cartTotal = document.getElementById("cart-total");
+
+     function renderCart(){
+        product.array.forEach(element => {
+              const productDiv = document.createElement("div");  
+              button.addEventListener("click", () => {
+                addToCart(product);      
+        });
+
+        container.appendChild(productDiv)
+
+     }
+
+     function addToCart(product){
+        cart.push(product);
+        renderCart();
+     }
+
+    </script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coolors</title>
-    <!-- <link rel="stylesheet" href="./practice.js"> -->
-    <style>
-        #container {
-        position: relative;
-        height: 80vh;
-        background-color: lightblue;
-        overflow: hidden;
-    }
-    .ball {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        background-color: darkblue;
-        border-radius: 50%;
-    }
-    </style>
-</head>
-<body>
+<html>
+<body style="background-color: skyblue;">
+    <title>Web Page</title>
 
-    <div style="top: 0;" id="plus"> 
-        <button>+</button>
-    </div>
-    
-    <div id="container">
-        <div class="ball"></div>
-    </div>
+<h1>My First Heading</h1>
+<dt> Heading 1</dt>
+<dd>
+    under the heading one
+    <ol>
+        <li> Number one </li>
+            <ul> 
+                <li> Ayaz</li>
+                <li>Hussain </li>
+            </ul>
+        <li>Number Two </li>
+    </ol>
+</dd>
 
-    <div id="addButton" style="bottom: 0;">
-        <button>-</button>
+<h1 style="text-align: center;">Center text</h1>
+
+<p>My first <br> paragraph.</p>
+<a href="https://www.w3schools.com/html/html_basic.asp"><img src ="download.jpeg" alt="Photo of Dog" width="100px" height="100px">
+</a>
+<p style="color: red">This is red color paragraph</p>
+<blockquote cite ="https://www.w3schools.com/html/html_basic.asp"></blockquote>
+<select name ="favouriteFood">
+    <option>Aallu</option>
+    <option>Biryani</option>
+</select>
+
+<form>
+    <div class="controls">
+        <label for="id">User ID</label>
+        <input type="text" id="id" name="id">
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
     </div>
-    
+</form>
+<div>
+    <input type ="checkbox" id="scales" name="scales" checked>
+    <label for="scales">scales</label>
+</div> 
+
+<div>
+    <input type ="checkbox" id="horns" name="horns" checked>
+    <label for="horns">horns</label>
+    <input type="text" value="Input text" id="input text">
+</div> 
 </body>
 </html>

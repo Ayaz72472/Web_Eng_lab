@@ -1,0 +1,12 @@
+.container {
+    border: 2px solid red; /* Set border to red */
+    padding: 20px; /* Add padding for content inside */
+    margin: 20px; /* Add margin for spacing */
+}
+
+.ball {
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
+    background-color: blue; /* Set background color */
+    border-radius: 50%; /* Make it round */
+}

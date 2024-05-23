@@ -1,2 +1,8 @@
-const arr = [1,2,3,4,5,6,7]
-arr.map
+const container = document.getElementById("container")
+const addButton = document.getElementById('addButton');
+
+addButton.addEventListener('click', () => {
+            const newBall = document.createElement('div');
+            newBall.classList.add('ball');
+            container.appendChild(newBall);
+});
